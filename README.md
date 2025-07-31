@@ -6,7 +6,7 @@ Prerequisite:
 - Two EC2 instances (Victim and Monitor)
 - VPC Traffic Mirroring (Make sure VPC has public-subnet route)
 - Suricata (open-source IDS/IPS packet inspection tool)
-- 
+
 Step 1: Prepare AWS Environment
 - Create a VPC (if you don’t already have one).
 - Use the default VPC or create a custom VPC only option with at least one public subnet.
@@ -51,8 +51,6 @@ Step 4: Monitor Traffic with Suricata
 Step 6: Verify Detection
 - Confirm that Suricata detects port scans or abnormal patterns.
 - Review alerts in /var/log/suricata/fast.log or /var/log/suricata/eve.json.
- 
-Figure 11: 	Detailed JSON Log Analysis
 
 Step 7: Cleanup
 - Stop traffic mirroring session to avoid charges.
